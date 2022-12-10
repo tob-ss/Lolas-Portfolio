@@ -79,37 +79,41 @@
     background-color: #FBFAFA;
     transform: translateX(6%) rotate(10deg);
 }
+
+.card:nth-child(7).zoom {
+    animation: fadein1 4s forwards;
+    transform: translateX(40%) translateY(20%) rotate(-0.3deg) scale(1.3);
+}
+
+@keyframes fadein1 {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .card:nth-child(6) {
     background-color: #Eee;
     transform: translateX(15%) translateY(-5%) rotate(10deg);
 }
-.card:nth-child(5) {
-    background-color: #d9d9d9;
-    transform: translateX(24%) translateY(-10%) rotate(10deg);
-}
-.card:nth-child(4) {
-    background-color: #ccc;
-    transform: translateX(33%) translateY(-15%) rotate(10deg);
-}
-.card:nth-child(3) {
-    background-color: #b9b9b9;
-    transform: translateX(42%) translateY(-20%) rotate(10deg);
-}
-.card:nth-child(2) {
-    background-color: #999;
-    transform: translateX(51%) translateY(-25%) rotate(10deg);
-}
-.card:nth-child(1) {
-    background-color: #797979;
-    transform: translateX(60%) translateY(-30%) rotate(10deg);
+
+.card:nth-child(6).zoom {
+    animation: fadein2 4s forwards;
+    transform: translateX(30%) translateY(15%) rotate(-0.5deg) scale(1.3);
 }
 
-.card:nth-child(7).fadein {
-    animation: fadein 6s forwards;
-    transform: translateX(40%) translateY(20%) rotate(-0.3deg) scale(1.3);
-}
-
-@keyframes fadein {
+@keyframes fadein2 {
     0% {
         opacity: 0;
     }
@@ -133,3 +137,25 @@
     transition: transform 0.1s;
     transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 0.1);
 }
+
+.card:nth-child(5) {
+    background-color: #d9d9d9;
+    transform: translateX(24%) translateY(-10%) rotate(10deg);
+}
+.card:nth-child(4) {
+    background-color: #ccc;
+    transform: translateX(33%) translateY(-15%) rotate(10deg);
+}
+.card:nth-child(3) {
+    background-color: #b9b9b9;
+    transform: translateX(42%) translateY(-20%) rotate(10deg);
+}
+.card:nth-child(2) {
+    background-color: #999;
+    transform: translateX(51%) translateY(-25%) rotate(10deg);
+}
+.card:nth-child(1) {
+    background-color: #797979;
+    transform: translateX(60%) translateY(-30%) rotate(10deg);
+}
+

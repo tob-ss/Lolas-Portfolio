@@ -1,59 +1,30 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding 0;
-    font-family: 'Kumbh Sans', sans-serif;
+    padding: 0;
     scroll-behavior: smooth;
 }
 
-#navbar {
-    background: #d9d9d9;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    top: 0;
+.portfolio {
+    background-color: #E4DCE9;
+    font-size: large;
+    display: block;
+}
+
+.title {
+    display: block;
     z-index: 999;
-    position: sticky;
+    color: #E4DCE9;
+    text-shadow: -1.5px 0 #4d354e, 0 1.5px #4d354e, 1.5px 0 #4d354e, 0 -1.5px #4d354e;
+    font-size: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 
-.navbar__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    z-index: inherit;
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 50px;
-}
-
-.navbar__logo {
-    background-color: #c1c1c1;
-    height: 100px;
-    width: 100px;
-    float: right;
-    z-index: 1;
-    border-radius: 50%;
-    position: absolute;
-    top: 50px;
-    right: 200px;
-}
-
-.navbar__title {
-    background-color: #c1c1c1;
-    border-radius: 5px;
-    padding: 10px 50px;
-    width: 300px;
-    height: 30px;
-}
 
 .portfolio__container {
     margin: 0 auto;
-    background-color: #fff;
-    height: 100vh;
+    background-color: #E4DCE9;
     
     display: grid;
     place-items: center;
@@ -62,7 +33,7 @@
 }
 
 .click-away {
-    background-color: #fff;
+    background-color: #E4DCE9;
     width: 100%;
     height: 100vh;
     overflow: visible;
@@ -70,7 +41,7 @@
 }
 
 .card-group {
-    padding-top: 300px;
+    padding-top: 250px;
     padding-left: 50px;
     aspect-ratio: 5 / 7;
     width: 100vmin;
@@ -80,11 +51,25 @@
     width: 50vmin;
     aspect-ratio: 5 / 7;
     position: absolute;
-    border-radius: 20px;
+    border-radius: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    color: #4d354e;
+}
+
+.card1text {
+    position: relative;
+    font-size: 30px;
+}
+
+.card1text p {
+    padding: 75px 50px 0px 50px;
 }
 
 .card:nth-child(7) {
-    background-color: #FBFAFA;
+    background-color: #ECE8EE;
     transform: translateX(6%) rotate(10deg);
 }
 
@@ -112,7 +97,7 @@
 }
 
 .card:nth-child(6) {
-    background-color: #Eee;
+    background-color: #E4DCE9;
     transform: translateX(15%) translateY(-5%) rotate(10deg);
 }
 
@@ -148,7 +133,7 @@
 }
 
 .card:nth-child(5) {
-    background-color: #d9d9d9;
+    background-color: #dacee1;
     transform: translateX(24%) translateY(-10%) rotate(10deg);
 }
 
@@ -184,7 +169,7 @@
 }
 
 .card:nth-child(4) {
-    background-color: #ccc;
+    background-color: #cfbfd9;
     transform: translateX(33%) translateY(-15%) rotate(10deg);
 }
 
@@ -220,7 +205,7 @@
 }
 
 .card:nth-child(3) {
-    background-color: #b9b9b9;
+    background-color: #c4b0d0;
     transform: translateX(42%) translateY(-20%) rotate(10deg);
 }
 
@@ -292,7 +277,7 @@
 }
 
 .card:nth-child(1) {
-    background-color: #797979;
+    background-color: #7f5c7e;
     transform: translateX(60%) translateY(-30%) rotate(10deg);
 }
 

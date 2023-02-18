@@ -14,11 +14,11 @@
 .title {
     display: block;
     z-index: 999;
-    color: #E4DCE9;
-    text-shadow: -1.5px 0 #4d354e, 0 1.5px #4d354e, 1.5px 0 #4d354e, 0 -1.5px #4d354e;
+    color: #4d354e;
     font-size: 100px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
+    padding-bottom: 40px;
 }
 
 
@@ -32,6 +32,29 @@
     max-width: 1000px;
 }
 
+.links-wrapper {
+    position: relative;
+    top: 450px;
+    left: 1000px;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 100px 100px;
+    max-width: fit-content;
+}
+
+.circle {
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 10px;
+    font-size: 17px;
+    color: #A184B2;
+    padding: 30px 0px 10px 0px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
 .click-away {
     background-color: #E4DCE9;
     width: 100%;
@@ -41,7 +64,7 @@
 }
 
 .card-group {
-    padding-top: 250px;
+    padding-top: 225px;
     padding-left: 50px;
     aspect-ratio: 5 / 7;
     width: 100vmin;
@@ -57,19 +80,26 @@
     text-align: left;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     color: #4d354e;
+    
 }
 
 .card1text {
     position: relative;
-    font-size: 30px;
+    font-size: 40px;
+    padding: 90px 10px 10px 75px
 }
 
-.card1text p {
-    padding: 75px 50px 0px 50px;
+.card1text p:nth-child(1) {
+    font-size: 50px;
+    padding: 0px 0px 35px 0px;
+}
+
+.space {
+    padding-bottom: 10px;
 }
 
 .card:nth-child(7) {
-    background-color: #ECE8EE;
+    background-color: #EFE8EE;
     transform: translateX(6%) rotate(10deg);
 }
 
@@ -241,7 +271,7 @@
 }
 
 .card:nth-child(2) {
-    background-color: #999;
+    background-color: #A184B2;
     transform: translateX(51%) translateY(-25%) rotate(10deg);
 }
 

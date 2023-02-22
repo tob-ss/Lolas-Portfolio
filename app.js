@@ -17,6 +17,19 @@ const card6 = document.querySelector('.card:nth-child(2)');
 
 const card7 = document.querySelector('.card:nth-child(1)');
 
+const helloCircle = document.querySelector('.hello');
+
+const cvCircle = document.querySelector('.cv');
+
+const portfolioCircle = document.querySelector('#portfolio');
+
+const contactCircle = document.querySelector('.contact');
+
+const socialCircle = document.querySelector('.social');
+
+const aboutCircle = document.querySelector('.about');
+
+
 const notCards = document.querySelector('.click-away');
 
 const zoom1 = () => {
@@ -145,17 +158,35 @@ const shrink7 = () => {
 
 card1.addEventListener('click', zoom1)
  
+helloCircle.addEventListener('click', zoom1)
+
 card2.addEventListener('click', zoom2)
+
+cvCircle.addEventListener('click', zoom2)
 
 card3.addEventListener('click', zoom3)
 
+portfolioCircle.addEventListener('click', zoom3)
+
 card4.addEventListener('click', zoom4)
+
+contactCircle.addEventListener('click', zoom4)
 
 card5.addEventListener('click', zoom5)
 
+socialCircle.addEventListener('click', zoom5)
+
 card6.addEventListener('click', zoom6)
 
+aboutCircle.addEventListener('click', zoom6)
+
 card7.addEventListener('click', zoom7)
+
+
+
+
+
+
 
 notCards.addEventListener('click', shrink1)
 
